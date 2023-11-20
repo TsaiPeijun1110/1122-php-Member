@@ -43,8 +43,8 @@
 
                                 ?>
                                 <div class="form-outline mb-4">
-                                    <input type="email" id="form2Example18" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form2Example18">Email address</label>
+                                    <label for="" class="col-3">帳號：</label>
+                                    <input type="text" name="acc" id="acc" class="col-9 rounded border-0 border-bottom border-1 ">
                                 </div>
 
                                 <div class="form-outline mb-4">

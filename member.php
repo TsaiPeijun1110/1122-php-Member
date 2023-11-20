@@ -49,8 +49,9 @@ include_once "./include/connect.php";
         }
 
 
-        $sql = "select * from users where where `acc`='{$_session['user']}'";
-        $user = $pdo->query($sql)->fetch();
+        // $sql = "select * from users where where `acc`='{$_session['user']}'";
+        // $user = $pdo->query($sql)->fetch();
+        $user=find('users',['acc'=>"{$_SESSION['user']}"]);
 
         ?>
         <form action="./api/update.php" method="post" class="col-4 m-auto">
