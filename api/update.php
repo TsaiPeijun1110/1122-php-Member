@@ -1,5 +1,5 @@
 <?php
-include_once "./include/connect.php";
+include_once "../include/connect.php";
 
 $sql="update `user` set `acc`='{$_POST['acc']}',
                         `pw`='{$_POST['pw']}',
@@ -14,4 +14,4 @@ $sql="update `user` set `acc`='{$_POST['acc']}',
         $_SESSION['msg']="資料無異動";
       }
 
-      header("location:member.php");
+      header("location:../member.php");

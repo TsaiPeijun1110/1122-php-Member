@@ -53,7 +53,7 @@ include_once "./include/connect.php";
         $user = $pdo->query($sql)->fetch();
 
         ?>
-        <form action="update.php ">
+        <form action="./api/update.php" method="post" class="col-4 m-auto">
             <div class="input-group my-2">
                 <label class="col-4 input-group-text">帳號</label>
                 <input class=" form-control" type="text" name="acc" id="acc">
@@ -78,7 +78,7 @@ include_once "./include/connect.php";
                 <input type="hidden" name="id" id="id" value="<?= $user['id']; ?>">
                 <input class="btn-primey mx-2" type="submit" value="更新">
                 <input class="btn btn-warning mx-2" type="reset" value="重置">
-                <input class="btn btn-danger mx-2" type="button" value="讓我消失吧" onclick="location.href='del_user.php?id=<?= $user['id']; ?>'">
+                <input class="btn btn-danger mx-2" type="button" value="讓我消失吧" onclick="location.href='./api/del_user.php?id=<?= $user['id']; ?>'">
             </div>
         </form>
     </div>
