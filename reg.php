@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="app" class="container">
+    <?php include "./include/header.php";?>
     <h2 class="text-center">會員註冊</h2>
     <form action="./api/add_user.php" method="post" class="col-4 m-auto">
     <div class="input-group my-2">
@@ -35,5 +36,6 @@
     <input class="btn btn-warning" type="reset" value="重置">
     </form>
 </div>
+<?php include "./include/footer.php" ;?>
 </body>
 </html>
