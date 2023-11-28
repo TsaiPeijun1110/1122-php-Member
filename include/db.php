@@ -4,7 +4,7 @@ session_start();
 class DB
 {
 
-    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=school";
+    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=member";
     protected $pdo;
     protected $table;
 
@@ -145,6 +145,7 @@ function dd($array)
     print_r($array);
     echo "</pre>";
 }
+
 
 
 $student = new DB('students');

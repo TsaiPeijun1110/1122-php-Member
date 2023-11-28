@@ -1,5 +1,6 @@
 <?php
-include_once "../include/connect.php";
+//include_once "../include/connect.php";
+include_once "../include/db.php";
 $acc=$_POST['acc'];
 $acc=$_POST['pw'];
 
@@ -10,7 +11,7 @@ $acc=$_POST['pw'];
 // $user=$pdo->query($sql)->fetch();
 //$user=$pdo->query($sql)->fetchColumn();
 
-$res=total('users',['acc'=>$acc,'pw'=>$pw]);
+$res=$User->count(['acc'=>$acc,'pw'=>$pw]);
 
 // if($user['acc']==$acc && $user['pw']==$pw){
     if($res){
